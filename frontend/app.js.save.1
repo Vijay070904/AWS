@@ -6,7 +6,7 @@ app.use(express.urlencoded({ extended: true }));
 app.get('/', (req, res) => {
   res.send(`
     <h2>To-Do Form</h2>
-    <form action="http://52.55.40.120:5000/submit" method="POST">
+    <form action="http://54.224.103.191:5000/submit" method="POST">
       <input type="text" name="itemName" placeholder="Item Name"><br><br>
       <input type="text" name="itemDescription" placeholder="Item Description"><br><br>
       <button type="submit">Submit</button>
@@ -17,3 +17,4 @@ app.get('/', (req, res) => {
 app.listen(3000, () => {
   console.log('Frontend running on port 3000');
 });
+
